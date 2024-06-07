@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 
--- netrw
-vim.keymap.set("n", "<leader>pe", vim.cmd.Ex)
+-- tree toggle
+vim.keymap.set("n", "<leader>pe", ":NvimTreeToggle<CR>")
 
 -- move highlighted blocks 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
