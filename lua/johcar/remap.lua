@@ -15,3 +15,6 @@ vim.keymap.set("n", "<C-l>", "<C-w>l")
 
 -- move line to this line without moving cursor(which is default)
 vim.keymap.set("n", "J", "mzJ`z")
+
+-- exit insert mode 
+vim.keymap.set("i", "jk", "<Esc>")
