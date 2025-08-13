@@ -26,6 +26,11 @@ return {
             vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
         end
 
+        -- Inline diagnostic messages ---
+        vim.diagnostic.config({
+            virtual_text = true,
+        })
+
         require("mason").setup()
         require("mason-lspconfig").setup({
             ensure_installed = {
